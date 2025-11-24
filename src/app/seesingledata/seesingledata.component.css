@@ -1,0 +1,55 @@
+.bus-card {
+  width: 380px;
+  background: #ffffff;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  border-left: 6px solid #d32f2f; /* redbus color */
+}
+
+/* Header */
+.bus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bus-header h3 {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 20px;
+}
+
+.bus-no {
+  background: #ffe6e6;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Body */
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.row p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.price-box {
+  text-align: right;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e7d32;
+}

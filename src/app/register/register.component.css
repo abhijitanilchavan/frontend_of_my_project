@@ -1,0 +1,45 @@
+/* FULL PAGE BACKGROUND */
+:host {
+  display: block;
+  height: 100vh;
+}
+
+/* Background + center */
+.register-page {
+  width: 100%;
+  height: 100%;
+
+  background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Buttons */
+.btn-link {
+  background: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #4338ca;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: 0.25s ease;
+}
+
+.btn-link:hover {
+  transform: translateY(-4px);
+  background: #f0f3ff;
+}
+
+.btn-link.active {
+  background: #c7d2fe;
+  transform: scale(1.05);
+}

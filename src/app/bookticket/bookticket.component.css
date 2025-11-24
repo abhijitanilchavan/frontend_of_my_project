@@ -1,0 +1,110 @@
+/* Overall layout */
+.bus-page {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 25px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
+}
+
+/* Right Panel */
+.right-panel {
+  width: 380px;
+}
+
+.bus-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.14);
+}
+
+/* Titles */
+.panel-title {
+  margin-bottom: 20px;
+  color: #d63031;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #2d3436;
+}
+
+/* Form Styles */
+.booking-form .form-group {
+  margin-bottom: 18px;
+}
+
+.booking-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #2d3436;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #bfc5d2;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #ff7675;
+  box-shadow: 0 0 4px rgba(255,118,117,0.5);
+  outline: none;
+}
+
+/* Booking Button */
+.btn-book {
+  width: 100%;
+  padding: 14px;
+  background: #d63031;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-book:hover {
+  background: #b22222;
+}
+
+/* Divider Line */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #dfe6e9;
+  margin: 15px 0;
+}
+
+/* Text */
+.bus-card p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #2d3436;
+}
+
+strong {
+  color: #000;
+}

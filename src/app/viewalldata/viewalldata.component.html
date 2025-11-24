@@ -1,0 +1,22 @@
+<table border="1">
+    <tr>
+        <th>busno</th>
+        <th>name</th>
+        <th>toLocation</th>
+        <th>fromLocation</th>
+        <th>price</th>
+        <th colspan="3">Actions</th>
+    </tr>
+
+    <tr *ngFor="let s of st">
+        <td>{{s.busno}}</td>
+        <td>{{s.name}}</td>
+        <td>{{s.toLocation}}</td>
+        <td>{{s.fromLocation}}</td>
+        <td>{{s.price}}</td>
+
+        <td><button class="delete-btn" (click)="ondelete(s.busno)">DELETE</button></td>
+        <td><button class="edit-btn" (click)="onedit(s.busno)">EDIT</button></td>
+        <td><button class="see-btn" (click)="onsee(s.busno)">SEE</button></td>
+    </tr>
+</table>

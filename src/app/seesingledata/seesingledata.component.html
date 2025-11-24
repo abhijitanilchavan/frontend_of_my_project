@@ -1,0 +1,17 @@
+<div class="bus-card">
+  <div class="bus-header">
+    <h3>{{ st.name }}</h3>
+    <span class="bus-no">Bus No: {{ st.busno }}</span>
+  </div>
+
+  <div class="bus-body">
+    <div class="row">
+      <p><strong>From:</strong> {{ st.fromLocation }}</p>
+      <p><strong>To:</strong> {{ st.toLocation }}</p>
+    </div>
+
+    <div class="price-box">
+      <span class="price">₹ {{ st.price }}</span>
+    </div>
+  </div>
+</div>

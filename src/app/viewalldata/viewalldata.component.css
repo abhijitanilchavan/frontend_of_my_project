@@ -1,0 +1,80 @@
+/* --- Table Container --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Table Header --- */
+th {
+  background: #d32f2f;       /* Redbus-like Red */
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* --- Table Rows --- */
+td {
+  padding: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Hover effect */
+tr:hover {
+  background: #fff5f5; /* very light red shade */
+  transition: 0.3s;
+}
+
+/* --- Buttons --- */
+button {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Delete Button */
+button.delete-btn,
+button:nth-child(1) {
+  background: #d32f2f;
+  color: white;
+}
+
+button.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Edit Button */
+button.edit-btn,
+button:nth-child(2) {
+  background: #ff9800;
+  color: white;
+}
+
+button.edit-btn:hover {
+  background: #e68900;
+}
+
+/* See Button */
+button.see-btn,
+button:nth-child(3) {
+  background: #1976d2;
+  color: white;
+}
+
+button.see-btn:hover {
+  background: #0d47a1;
+}
+
+/* Make each button aligned properly */
+td button {
+  margin-right: 6px;
+}

@@ -1,0 +1,40 @@
+<div class="page-container">
+
+  <!-- Search Form -->
+  <form class="search-box" [formGroup]="fg" (ngSubmit)="call()">
+    <input type="text" formControlName="toLocation" placeholder="To Location">
+    <input type="text" formControlName="fromLocation" placeholder="From Location">
+    <input type="submit" value="Find">
+  </form>
+
+  <!-- OUTER CARD -->
+  <div class="outer-card">
+    <div class="outer-title">Available Buses</div>
+
+    <div *ngFor="let item of busrecords" class="bus-card">
+      <div class="bus-header">
+        {{ item.name }} (Bus No: {{ item.busno }})
+      </div>
+
+      <div class="bus-tags">
+        <span class="tag type">{{ item.type }}</span>
+        <span class="tag ac" *ngIf="item.ac">AC</span>
+        <span class="tag sleeper" *ngIf="item.sleeper">Sleeper</span>
+        <span class="tag seater" *ngIf="item.seater">Seater</span>
+      </div>
+
+      <div class="bus-subtitle">Comfortable • Safe • Fast</div>
+
+      <div class="bus-info">
+        <div><strong>From:</strong> {{ item.fromLocation }}</div>
+        <div><strong>To:</strong> {{ item.toLocation }}</div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="price-tag">₹ {{ item.price }}</div>
+      <button class="price-tag" (click)="bookticketcall( item.busno)">Book Ticket</button>
+    </div>
+  </div>
+
+</div>

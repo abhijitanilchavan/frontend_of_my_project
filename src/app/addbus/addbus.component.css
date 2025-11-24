@@ -1,0 +1,72 @@
+/* Center the form on the page */
+.page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9; /* light clean background */
+  padding: 20px;
+}
+
+/* Card container */
+.form-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Label styles */
+form label {
+  display: block;
+  margin-top: 12px;
+  color: #34495e;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Input styles */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccd1d5;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+/* Input focus effect */
+form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #2380c7;
+}

@@ -1,0 +1,102 @@
+/* Home Page Container */
+.home-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* HERO SECTION */
+.hero-section {
+  height: 70vh;
+  background: linear-gradient(to bottom right, #4338ca, #6366f1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #4338ca;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.hero-btn:hover {
+  background: #eef2ff;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 10px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 260px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* ABOUT BOX */
+.about-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.about-box h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about-box p {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.6;
+}

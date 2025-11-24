@@ -1,0 +1,58 @@
+<div class="bus-page">
+  
+  <!-- Left: Passenger Form -->
+  <div class="left-panel">
+    <h2 class="panel-title">Passenger Information</h2>
+
+    <form [formGroup]="fg" (ngSubmit)="onSubmit()" class="booking-form">
+
+      <div class="form-group">
+        <label for="pname">Full Name</label>
+        <input id="pname" type="text" formControlName="pname" placeholder="Enter full name" />
+      </div>
+
+      <div class="form-group">
+        <label for="page">Age</label>
+        <input id="page" type="number" formControlName="page" placeholder="Enter age" />
+      </div>
+
+      <div class="form-group">
+        <label for="padharno">Aadhaar Number</label>
+        <input id="padharno" type="number" formControlName="padharno" placeholder="Enter Aadhaar No" />
+      </div>
+
+      <div class="form-group">
+        <label>Gender</label>
+        <select formControlName="pgender">
+          <option value="">Choose Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <button class="btn-book" type="submit">Confirm Booking</button>
+    </form>
+  </div>
+
+  <!-- Right: Bus Details -->
+  <div class="right-panel">
+    <div class="bus-card">
+      <h2 class="panel-title">Bus Details</h2>
+
+      <p><strong>Bus No:</strong> {{ busdata.busno }}</p>
+      <p><strong>Operator:</strong> {{ busdata.name }}</p>
+      <p><strong>Route:</strong> {{ busdata.fromLocation }} → {{ busdata.toLocation }}</p>
+      <p><strong>Ticket Price:</strong> ₹{{ busdata.price }}</p>
+
+      <div class="divider"></div>
+
+      <h3 class="sub-title">Passenger Summary</h3>
+      <p><strong>Name:</strong> {{ pname }}</p>
+      <p><strong>Age:</strong> {{ page }}</p>
+      <p><strong>Aadhaar:</strong> {{ padharno }}</p>
+      <p><strong>Gender:</strong> {{ pgender }}</p>
+    </div>
+  </div>
+
+</div>

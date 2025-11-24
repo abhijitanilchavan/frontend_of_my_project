@@ -1,0 +1,175 @@
+/* Whole Page */
+.page-container {
+  width: 100%;
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f7f9;
+}
+
+/* Page Caption */
+.page-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #d63031;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page-sub {
+  font-size: 15px;
+  color: #555;
+  margin-top: 3px;
+}
+
+/* Search Box (Centered) */
+.search-box {
+  display: flex;
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.search-box input {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 180px;
+  transition: 0.25s ease;
+}
+
+.search-box input:focus {
+  border-color: #d63031;
+  box-shadow: 0px 0px 5px rgba(214,48,49,0.3);
+  outline: none;
+}
+
+.search-box input[type="submit"] {
+  background: #d63031;
+  color: #fff;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box input[type="submit"]:hover {
+  background: #b22222;
+}
+
+/* Outer Title */
+.outer-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Bus Card (Square Unique Style) */
+.bus-card {
+  background: white;
+  width: 600px;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bus-card:hover {
+  transform: scale(1.015);
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Bus Title Row */
+.bus-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bus-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.bus-no {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Tags */
+.bus-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  color: white;
+}
+
+.type { background: #6c5ce7; }
+.ac { background: #0984e3; }
+.sleeper { background: #00b894; }
+.seater { background: #e17055; }
+
+/* Route Center Big */
+.route-center {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.arrow {
+  color: #d63031;
+  margin: 0 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #eee;
+}
+
+/* Price and Button Row */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #d63031;
+}
+
+.btn-book {
+  background: #d63031;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-book:hover {
+  background: #b22222;
+  transform: translateY(-2px);
+}
