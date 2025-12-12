@@ -1,15 +1,16 @@
-/* Center the form on the page */
-.page-container {
+/* Center everything on the page */
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f6f9; /* light clean background */
+  background: #f4f6f9;
   padding: 20px;
+  margin: 0;
 }
 
-/* Card container */
-.form-card {
+/* Form container (acts like your old card) */
+form {
   background: #ffffff;
   padding: 30px;
   width: 350px;
@@ -17,8 +18,8 @@
   box-shadow: 0 3px 12px rgba(0,0,0,0.12);
 }
 
-/* Title */
-.form-title {
+/* Title (if you use <h2> above form) */
+h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.6rem;
@@ -26,7 +27,7 @@
   font-weight: 600;
 }
 
-/* Label styles */
+/* Labels */
 form label {
   display: block;
   margin-top: 12px;
@@ -35,7 +36,7 @@ form label {
   font-weight: 500;
 }
 
-/* Input styles */
+/* Inputs */
 form input {
   width: 100%;
   padding: 10px;
@@ -46,14 +47,14 @@ form input {
   transition: border-color 0.2s;
 }
 
-/* Input focus effect */
+/* Input focus */
 form input:focus {
   border-color: #3498db;
   outline: none;
 }
 
 /* Submit button */
-.submit-btn {
+button[type="submit"] {
   width: 100%;
   margin-top: 20px;
   padding: 12px;
@@ -67,6 +68,6 @@ form input:focus {
   transition: background 0.2s;
 }
 
-.submit-btn:hover {
+button[type="submit"]:hover {
   background: #2380c7;
 }

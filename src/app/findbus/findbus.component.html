@@ -1,13 +1,13 @@
 <div class="page-container">
 
-  <!-- Search Form -->
+
   <form class="search-box" [formGroup]="fg" (ngSubmit)="call()">
     <input type="text" formControlName="toLocation" placeholder="To Location">
     <input type="text" formControlName="fromLocation" placeholder="From Location">
     <input type="submit" value="Find">
   </form>
 
-  <!-- OUTER CARD -->
+
   <div class="outer-card">
     <div class="outer-title">Available Buses</div>
 

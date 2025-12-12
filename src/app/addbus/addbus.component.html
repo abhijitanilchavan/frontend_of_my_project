@@ -1,4 +1,36 @@
-<div class="page-container">
+
+<form [formGroup]="fg" (ngSubmit)="call()">
+
+  <label>Bus No</label>
+  <input type="number" formControlName="busno">
+
+  <label>Name</label>
+  <input type="text" formControlName="name">
+
+  <label>To Location</label>
+  <input type="text" formControlName="toLocation">
+
+  <label>From Location</label>
+  <input type="text" formControlName="fromLocation">
+
+  <label>Price</label>
+  <input type="number" formControlName="price">
+
+  <button type="submit">Submit</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="page-container">
 
   <div class="form-card">
     <h2 class="form-title">Add Buses</h2>
@@ -24,4 +56,6 @@
     </form>
   </div>
 
-</div>
+</div> -->
+
+

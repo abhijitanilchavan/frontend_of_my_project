@@ -28,9 +28,6 @@ export class EditpageComponent implements OnInit {
       toLocation:s.toLocation,
       fromLocation:s.fromLocation,
       price:s.price
-
-     
-
     })
 
     })
@@ -51,9 +48,7 @@ export class EditpageComponent implements OnInit {
   onupdate(){
     alert("update")
     this.src.saverecord(this.fg.value).subscribe();
-    this.router.navigateByUrl('/Viewalldata');
- 
-    
+    this.router.navigateByUrl('/Viewalldata');  
   }
 
 }
